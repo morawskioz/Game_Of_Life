@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>let's play</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <form id="board__values">
+            <label for= "board__size">Board height and width:</label>
+            <input type="text" name="board__size" value="50" id="board__size">
+            The board has to be a square!<br>
+            <button id="create__board">Create board</button>
+        </form><br>
+        <section id="game-set">
+            <button id="play">graj</button>
+            <button id="pause">pauza</button>
+            <button id="reset">reset</button>
+        </section>
+        <section id="board">
+        </section>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
