@@ -11,7 +11,7 @@ $(function () {
             this.board.css("width" , this.width*10);
             this.board.css("height" , this.height*10);
             var number__of__fields = this.width * this.height;
-            for (i = 0 ; i < number__of__fields; i++) {
+            for (let i = 0 ; i < number__of__fields; i++) {
                 var new__Div = $("<div>");
                 this.board.append(new__Div)
             }
@@ -98,8 +98,8 @@ $(function () {
 
         this.computeNextGeneration = function() {
             var future__state = [];
-            for (i=0 ; i < self.width; i++){
-                for (j = 0 ;j < self.height; j++){
+            for (let i=0 ; i < self.width; i++){
+                for (let j = 0 ;j < self.height; j++){
                     future__state.push(self.computeCellNextState(j,i));
                 }
             }
@@ -107,7 +107,7 @@ $(function () {
             self.printNextGeneration(future__state);
         };
         this.printNextGeneration = function (array) {
-            for (i = 0; i < array.length; i++ ){
+            for (let i = 0; i < array.length; i++ ){
                 if (array[i] === 1) {
                     self.cell[i].classList.add("live")
                 }
@@ -117,7 +117,7 @@ $(function () {
             self.idSetInterval = setInterval(self.computeNextGeneration, 100)
         };
         this.clear__the__board = function () {
-            for (i=0; i< self.cell.length; i++){
+            for (let i=0; i< self.cell.length; i++){
                 self.cell[i].classList.remove("live")
             }
         }
