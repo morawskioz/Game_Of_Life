@@ -2,6 +2,9 @@
 The game of life in JavaScript.It isis a cellular automaton devised by the 
 British mathematician John Horton Conway in 1970.
 
+To run this game simply go to:
+https://morawskioz.github.io/Game_Of_Life/
+
 ## Rules
 1. Any live cell with fewer than two live neighbors dies, as if by underpopulation.
 2. Any live cell with two or three live neighbors lives on to the next generation.
@@ -16,5 +19,8 @@ Player can revive a cell by simply hovering over it.
 * CSS
 * JavaScript
 * jQuery
+* WebPack
+
+
 
 
