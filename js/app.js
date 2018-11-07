@@ -129,14 +129,18 @@ $(function () {
     var create__board = $("#create__board");
     create__board.on("click", function (e) {
         e.preventDefault();
-        game.createBoard();
-        game.startGame();
-        game.firstGlider()
-
+        const oneBoard = $("#board")
+        if (oneBoard.hasClass("boardCreated")){
+            alert("Plansza już zbudowana, przeładuj stronę, żeby zbudować nową.")
+        } else{
+            game.createBoard();
+            game.startGame();
+            game.firstGlider()
+            oneBoard.addClass("boardCreated")
+        }
     });
     var play__button = $("#play");
     play__button.on("click", function () {
-
             clearInterval(game.idSetInterval);
             game.idSetInterval = null;
             game.startGame();
