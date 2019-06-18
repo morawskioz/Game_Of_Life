@@ -11,20 +11,21 @@
 <body>
     <div class="flex-container">
 
-        <form id="board__values">
-            <label for= "board__size">Board height and width:</label>
-            <input type="text" name="board__size" value="50" id="board__size">
+        <form id="boardValues">
+            <label for= "boardSize">Board height and width:</label>
+            <input type="text" name="boardSize" value="50" id="boardSize" min="15">
             The board has to be a square!<br>
-            <button id="create__board">Create board</button>
+            <button id="createBoard">Create board</button>
         </form><br>
         <section id="game-set">
-            <button id="play">graj</button>
-            <button id="pause">pauza</button>
-            <button id="reset">reset</button>
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
         </section>
         <section id="board">
+            
         </section>
-
+        <h2 class="tips"> You can make the cell alive by hovering on them!</h2>
     </div>
 
     <script type="text/javascript" src="js/out.js"></script>

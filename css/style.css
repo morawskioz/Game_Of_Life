@@ -34,10 +34,17 @@ body {
     margin: 50px auto;
     width: auto;
 }
-.flex-container,#board__values {
+.flex-container,#boardValues {
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.tips {
+    display: none;
+}
+.visible {
+    display: flex;
 }
